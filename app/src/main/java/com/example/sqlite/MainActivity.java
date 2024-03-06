@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private StringBuffer myBuffer;
     private Context context;
     private ListView maListViewClients;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         maListViewClients = findViewById(R.id.listViewClients);
+        imageView = findViewById(R.id.imageView);
 
 
         SQLiteBancaDati maSQLdb = new SQLiteBancaDati(this);
